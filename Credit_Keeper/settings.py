@@ -114,6 +114,7 @@ DATABASES = {
 }
 
 SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False,  # <--- Add this line
     'SECURITY_DEFINITIONS': {
         'Bearer': {
             'type': 'apiKey',
@@ -123,6 +124,7 @@ SWAGGER_SETTINGS = {
         }
     },
 }
+
 
 
 # Password validation
